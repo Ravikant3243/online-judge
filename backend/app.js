@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import User from "./model/User.js";
 import bcrypt from "bcryptjs"
 import userRouter from "./routes/user-routes.js";
+import cookieParser from "cookie-parser";
 dotenv.config();
 const app=express();
 const port =process.env.PORT;
